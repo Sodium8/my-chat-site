@@ -1,0 +1,91 @@
+body{
+    background-color:rgb(76, 156, 130);
+}
+h1{
+    color: azure;
+    font-family: 'Courier New', Courier, monospace
+}
+legend{
+    font-family: 'Courier New', Courier, monospace;
+}
+.login{
+    background-color: rgb(29, 61, 61);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+.password{
+    background-color: rgb(29, 61, 61);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.btnauto{
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+}
+.btnauto:hover{
+    color: red;
+}
+
+.btnreg{
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+}
+.btnreg:hover{
+    color: red;
+}
+
+.status{
+    width: 180px;
+    height: 16px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(4, 0, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.fieldchat{
+    width: 577px;
+    height: 228px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.fieldmessage{
+    width: 530px;
+    height: 76px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    
+}

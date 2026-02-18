@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+    <body>
+        <script src="/static/js/script.js">
+            
+        </script>
+        <h1>Wellcome!</h1>
+        <form name="autorisationform">
+            <fieldset>
+                <legend>login to the website</legend>
+                <input type="text" name="login" class="login" placeholder="Enter your login">
+                <br>
+                <input type="password" name="password" class="password" placeholder="Enter your password">
+                <br>
+                <input type="button" name="btnauto" class="btnauto" value="log in" onclick="Autorisation()">
+                <input type="button" name="btnreg" value="register" class="btnreg" onclick="Registration()">
+                <br>
+                <input disabled type="text" name="status" class="status" placeholder="You are not autorised">
+                <br>
+            </fieldset>
+        </form>
+
+
+        <form name="chatform">
+            <fieldset>
+                <legend>Chat</legend>
+                <textarea disabled name="fieldchat" class="fieldchat" cols="70" rows="15" placeholder="common chat"></textarea>
+                <br>
+                <textarea name="fieldmessage" class="fieldmessage" cols="70" rows="5" maxlength=250 placeholder="enter the text and press Enter"></textarea>
+                <br>
+                <input type="button" name="btnsend" class="btnsend" value="Send!" onclick="SendMessage()">
+                <br>
+            </fieldset>
+        </form>
+        <script>UpdateChat()
+            checkauto()
+        </script>
+    </body>
+</html>
