@@ -8,14 +8,14 @@ def Registration():
     requestData = request.get_json()
     login = requestData['login']
     password = requestData['password']
-    f = open("/Users.txt", "r")
+    f = open("/opt/render/project/src/Users.txt", "r")
     for line in f:
         l, p = line.split(' ')
         if l == str(login):
             f.close()
             return "0"
     f.close()
-    f = open("/Users.txt", "a")
+    f = open("/opt/render/project/src/Users.txt", "a")
     f.write(str(login) + " " + str(password) + "\n")
     f.close()
     return "1"
@@ -26,7 +26,7 @@ def Autorisation():
     requestData = request.get_json()
     login = requestData['login']
     password = requestData['password']
-    f = open("/Users.txt", "r")
+    f = open("/opt/render/project/src/Users.txt", "r")
     for line in f:
         l, p = line.split(' ')
         if l == str(login) and p[:len(p)-1] == str(password):
@@ -41,7 +41,7 @@ def SendMessage():
     requestData = request.get_json()
     login = requestData['login']
     text = requestData['text']
-    f = open("/Chat.txt", "a")
+    f = open("/opt/render/project/src/Chat.txt", "a")
     f.write(str(login) + " says: " + str(text) + "\n")
     f.close()
     return "1"
@@ -49,7 +49,7 @@ def SendMessage():
 
 @app.route('/UpdateChat')
 def UpdateChat():
-    f = open("/Chat.txt", "r")
+    f = open("/opt/render/project/src/Chat.txt", "r")
     return f.read()
 
 
