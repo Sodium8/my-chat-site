@@ -1,0 +1,30 @@
+{
+  "Users": [
+    {
+      "login": "Sod",
+      "password": "123"
+    },
+    {
+      "login": "SSS",
+      "password": "SSS"
+    },
+    {
+      "login": "dasd",
+      "password": "sosss"
+    },
+    {
+      "login": "sdasd",
+      "password": "sosss"
+    }
+  ],
+  "Chats": [
+    {
+      "name": "common",
+      "messages": [
+        "Sod says: no",
+        "dasd says: hello",
+        "sdasd says: asdw"
+      ]
+    }
+  ]
+}
